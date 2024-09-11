@@ -13,7 +13,7 @@
     for (let i = 0; i <= winterDays.length;  i++) {
         if (winterDays[i] >= 0 && winterDays[i+1] < 0)  {
             freezeDays++;
-            console.log(`Общее количество замерзаний: ${freezeDays}, в период с ${i} по ${i+1}-й день.`);
+            console.log(`Общее кол-во замерзаний: ${freezeDays}, в период с ${i} по ${i+1}-й день.`);
             // console.log(`Freeze Day Number ${i+1} and temperature is ${winterDays[i+1]}`); //Отсчёт идёт с 0-го дня.
         }           
     }
