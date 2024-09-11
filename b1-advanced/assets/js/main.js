@@ -8,16 +8,30 @@
     let streak = 0; //кол-во дней когда продолжительные заморозки
     let longestStreak = Math.max(streak);
 
-    for (const item of winterDays) {
-        // console.log(`Item is: ${item}`);
+    // B1. Подсчёт кол-ва замерзаний.
+
+    for (let i = 0; i <= winterDays.length;  i++) {
+        if (winterDays[i] >= 0 && winterDays[i+1] < 0)  {
+            freezeDays++;
+            console.log(`Общее количество замерзаний: ${freezeDays}, в период с ${i} по ${i+1}-й день.`);
+            // console.log(`Freeze Day Number ${i+1} and temperature is ${winterDays[i+1]}`); //Отсчёт идёт с 0-го дня.
+        }           
+    }
+    
+
+
+    // B1 усложнённое ДЗ. Вычисление самых продолжительных заморозков из массива
+    
+    for (let item of winterDays) {
         if (item < 0) {
             streak++;
-            console.log(`Current streak is: ${streak}`);
         } else if (streak > longestStreak) {
             longestStreak = streak;
         } else if (item >= 0) { 
             streak = 0 } //обнуление streak если item >= 0
     }
     
-    console.log(`Longest streak is: ${longestStreak - 1}`); //поскольку в программировании порядок идёт от 0.
+    console.log(`Самые продолжительные заморозки были ${longestStreak - 1} дней подряд.`); //поскольку в программировании порядок идёт от 0.
         
+
+

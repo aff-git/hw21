@@ -6,10 +6,10 @@
     
     let freezeDays = 0; // кол-во дней когда заморозки (из плюсовой температуры переход в минусовую)
 
-    for (let i = 0; i < winterDays.length;  i++) {
+    for (let i = 0; i <= winterDays.length;  i++) {
         if (winterDays[i] >= 0 && winterDays[i+1] < 0)  {
             freezeDays++;
-            console.log(freezeDays);
-            console.log(`Freeze Day Number ${i+1} and temperature is ${winterDays[i+1]}`); //Отсчёт идёт с 0-го дня.
+            console.log(`Кол-во замерзаний: ${freezeDays}, в период с ${i} по ${i+1}-й день.`);
+            // console.log(`Freeze Day Number ${i+1} and temperature is ${winterDays[i+1]}`); //Отсчёт идёт с 0-го дня.
         }           
     }
