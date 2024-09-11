@@ -17,7 +17,9 @@
             // console.log(`Freeze Day Number ${i+1} and temperature is ${winterDays[i+1]}`); //Отсчёт идёт с 0-го дня.
         }           
     }
-    console.log(`Общее кол-во замерзаний: ${freezeDays}.`);
+    console.log(`Общее кол-во замерзаний: ${freezeDays}.`); // Итог
+
+    
 
 
     // B1 усложнённое ДЗ. Вычисление самых продолжительных заморозков из массива.
