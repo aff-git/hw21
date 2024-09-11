@@ -13,14 +13,14 @@
     for (let i = 0; i <= winterDays.length;  i++) {
         if (winterDays[i] >= 0 && winterDays[i+1] < 0)  {
             freezeDays++;
-            console.log(`Общее кол-во замерзаний: ${freezeDays}, в период с ${i} по ${i+1}-й день.`);
+            // console.log(`Общее кол-во замерзаний: ${freezeDays}, в период с ${i} по ${i+1}-й день.`);
             // console.log(`Freeze Day Number ${i+1} and temperature is ${winterDays[i+1]}`); //Отсчёт идёт с 0-го дня.
         }           
     }
-    
+    console.log(`Общее кол-во замерзаний: ${freezeDays}.`);
 
 
-    // B1 усложнённое ДЗ. Вычисление самых продолжительных заморозков из массива
+    // B1 усложнённое ДЗ. Вычисление самых продолжительных заморозков из массива.
     
     for (let item of winterDays) {
         if (item < 0) {
